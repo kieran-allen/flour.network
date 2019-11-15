@@ -1,22 +1,26 @@
+body {
+	background-color: #000;
+}
 main {
-  max-width: 768px;
-  margin: auto;
+	max-width: 768px;
+	margin: auto;
 }
-
+a {
+	color: #a3b1ff;
+}
 main > header {
-  font-family: "Noto Serif", serif;
+	font-family: "Noto Serif", serif;
+	color: #fff;
 }
-
 main > section > header,
 main > section > p,
 main > section > ul {
-  font-family: "Noto Sans", sans-serif;
+	font-family: "Noto Sans", sans-serif;
+	color: #fff;
 }
-
 main > section > ul > li {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
-
 main > section > ul > li:last-child {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
