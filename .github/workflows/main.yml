@@ -22,4 +22,4 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |
         ls
-        aws s3 sync ./index.html s3://kieranallen.me
+        aws s3 cp . s3://kieranallen.me
