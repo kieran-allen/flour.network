@@ -15,3 +15,11 @@ jobs:
         unzip ~/awscliv2.zip -d ~
         sudo ~/aws/install
         aws --version
+    - name: sync files
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
+        AWS_DEFAULT_REGION: "eu-west-1"
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      run: |
+        ls
+        aws s3 sync ./index.html s3://kieranallen.me
