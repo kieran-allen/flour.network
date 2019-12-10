@@ -20,6 +20,6 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_DEFAULT_REGION: "eu-west-1"
       run: |
-        aws s3 sync index.html s3://www.kieranallen.me
-        aws s3 sync style.css s3://www.kieranallen.me
-        aws s3 sync pgp.txt s3://www.kieranallen.me
+        aws s3 sync index.html s3://kieranallen.me
+        aws s3 sync style.css s3://kieranallen.me
+        aws s3 sync pgp.txt s3://kieranallen.me
