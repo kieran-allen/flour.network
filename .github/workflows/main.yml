@@ -21,5 +21,4 @@ jobs:
         AWS_DEFAULT_REGION: "eu-west-1"
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |
-        ls
-        aws s3 cp . s3://kieranallen.me
+        aws s3 cp ./index.html s3://kieranallen.me
