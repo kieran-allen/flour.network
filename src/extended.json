@@ -1,1 +1,25 @@
-{}
+{
+  "info": {
+    "location": "London, England"
+  },
+  "my-pool-ids": {
+    "0": "e17da710f1c139e4aacdc0dfe73c3be361cef97ddf3d5e9715c64278"
+  },
+  "when-satured-then-recommend": {
+    "0": "d5b90a198d2411b5c82fbdfee5f94b86de49a8589bfa7720b9de358f"
+  },
+  "adapools_ext": {
+    "prometheus": {
+      "0": {
+        "name": "London Relay",
+        "type": "relay",
+        "key": "a5388962d6d8e9f9a789f536d2b8b075"
+      },
+      "1": {
+        "name": "Frankfurt Relay",
+        "type": "relay",
+        "key": "57868406d325fed44f2cf115dbc9eeef"
+      }
+    }
+  }
+}
