@@ -3,5 +3,6 @@
   "ticker": "FLOUR",
   "description": "0% Fee | Secure | Dedicated",
   "homepage": "https://flour.network",
-  "nonce": "1601374077"
+  "nonce": "1601374411",
+  "extended": "https://flour.network/extended.json"
 }
