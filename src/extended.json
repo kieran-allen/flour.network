@@ -1,6 +1,9 @@
 {
   "info": {
-    "location": "London, England"
+    "location": "London, England",
+    "social": {
+      "twitter_handle": "FlourNetwork"
+    }
   },
   "my-pool-ids": {
     "0": "e17da710f1c139e4aacdc0dfe73c3be361cef97ddf3d5e9715c64278"
@@ -23,7 +26,7 @@
       "2": {
         "name": "Block Producer",
         "type": "bp",
-        "key": "96e0ebd82f2ad704b4f92a0e6a598e7b" 
+        "key": "96e0ebd82f2ad704b4f92a0e6a598e7b"
       }
     }
   }
