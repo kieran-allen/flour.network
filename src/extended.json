@@ -19,6 +19,11 @@
         "name": "Frankfurt Relay",
         "type": "relay",
         "key": "57868406d325fed44f2cf115dbc9eeef"
+      },
+      "2": {
+        "name": "Block Producer",
+        "type": "bp",
+        "key": "96e0ebd82f2ad704b4f92a0e6a598e7b" 
       }
     }
   }
