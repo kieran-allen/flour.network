@@ -21,4 +21,4 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_DEFAULT_REGION: "eu-west-1"
       run: |
-        aws s3 cp ./src s3://flour.network --recursive
+        aws s3 cp ./src s3://flour.network --recursive --add-header="Cache-Control:max-age=600"
