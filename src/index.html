@@ -3,20 +3,21 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="description" content="Flour network is a dedicated stake pool running on the cardano mainnet.">
+  <meta name="keywords" content="cardano,ada,stake,pool,crypto,cryptocurrency,shelly,₳,staking,daedalus,flour,delegate">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
   <title>🌾 Flour Network</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <div id="shape"></div>
   <main>
     <header>
       <h1>🌾 Flour Network [<strong>FLOUR</strong>]</h1>
       <p>
-        Flour network is a small stake pool running on the cardano mainnet. At
+        Flour network is a small dedicated pool running on the cardano mainnet. At
         the moment we have 1 block producing node and 2 relays, all of which
         are hosted in the cloud and distributed around Europe.
       </p>
@@ -30,11 +31,8 @@
           <tr>
             <td>Pool id</td>
             <td class="poolid">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://adapools.org/pool/e17da710f1c139e4aacdc0dfe73c3be361cef97ddf3d5e9715c64278"
-              >
+              <a target="_blank" rel="noopener noreferrer"
+                href="https://adapools.org/pool/e17da710f1c139e4aacdc0dfe73c3be361cef97ddf3d5e9715c64278">
                 e17da710f1c139e4aacdc0dfe73c3be361cef97ddf3d5e9715c64278
               </a>
             </td>
@@ -53,7 +51,7 @@
           </tr>
           <tr>
             <td>Pledge</td>
-            <td>₳100000</td>
+            <td>₳<span id="pledge-amount">100000</span></td>
           </tr>
         </tbody>
       </table>
@@ -160,5 +158,9 @@
     </footer>
   </main>
 </body>
-
+<script>
+  const locale = navigator.language;
+  const PLEDGE = new Intl.NumberFormat(locale).format(100000);
+  document.getElementById('pledge-amount').innerText = PLEDGE;
+</script>
 </html>
