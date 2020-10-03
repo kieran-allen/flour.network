@@ -3,23 +3,26 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Flour network is a dedicated stake pool running on the cardano mainnet.">
-  <meta name="keywords" content="cardano,ada,stake,pool,crypto,cryptocurrency,shelly,₳,staking,daedalus,flour,delegate,flour network">
+  <meta name="description" content="Flour network is a dedicated stake pool running on the cardano mainnet." />
+  <meta name="keywords"
+    content="cardano,ada,stake,pool,crypto,cryptocurrency,shelly,₳,staking,daedalus,flour,delegate,flour network,flour.network" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
   <title>🌾 Flour Network</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
 </head>
+
 <body>
   <div id="shape"></div>
   <main>
     <header>
       <h1>🌾 Flour Network [<strong>FLOUR</strong>]</h1>
       <p>
-        Flour network is a small dedicated pool running on the cardano mainnet. At
-        the moment we have 1 block producing node and 2 relays, all of which
-        are hosted in the cloud and distributed around Europe.
+        Flour network is a small dedicated pool running on the cardano
+        mainnet. At the moment we have 1 block producing node and 2 relays,
+        all of which are hosted in the cloud and distributed around Europe.
       </p>
     </header>
     <section>
@@ -43,24 +46,26 @@
           </tr>
           <tr>
             <td>Fee</td>
-            <td>0%<sup>*</sup></td>
+            <td><span id="fee-percentage"></span>%</td>
           </tr>
           <tr>
             <td>Cost</td>
-            <td>₳340</td>
+            <td>₳<span id="cost-amount"></span></td>
           </tr>
           <tr>
             <td>Pledge</td>
-            <td>₳<span id="pledge-amount">100000</span></td>
+            <td>₳<span id="pledge-amount"></span></td>
+          </tr>
+          </tr>
+            <td>Active Stake</td>
+            <td>₳<span id="active-stake"></span></td>
+          <tr>
+            <td>Lifetime Blocks</td>
+            <td id="lifetime-blocks"></td>
           </tr>
         </tbody>
       </table>
-      <p>
-        <sup>*</sup><small>We will keep our fee at 0% until the pool reaches saturation
-          point.</small>
-      </p>
     </section>
-
     <section class="hardware-specs">
       <header>
         <h2>⚙️ Hardware specifications</h2>
@@ -158,9 +163,5 @@
     </footer>
   </main>
 </body>
-<script>
-  const locale = navigator.language;
-  const PLEDGE = new Intl.NumberFormat(locale).format(100000);
-  document.getElementById('pledge-amount').innerText = PLEDGE;
-</script>
+
 </html>
