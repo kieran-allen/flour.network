@@ -8,7 +8,7 @@
     content="cardano,ada,stake,pool,crypto,cryptocurrency,shelly,₳,staking,daedalus,flour,delegate,flour network,flour.network" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>🌾 Flour Network</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js"></script>
@@ -57,14 +57,59 @@
             <td>₳<span id="pledge-amount"></span></td>
           </tr>
           </tr>
-            <td>Active Stake</td>
-            <td>₳<span id="active-stake"></span></td>
+          <td>Active stake</td>
+          <td>₳<span id="active-stake"></span></td>
           <tr>
-            <td>Lifetime Blocks</td>
+            <td>Lifetime blocks</td>
             <td id="lifetime-blocks"></td>
+          </tr>
+          <tr>
+            <td>Saturation</td>
+            <td><span id="saturation"></span>%</td>
           </tr>
         </tbody>
       </table>
+    </section>
+    <section id="fee-structure">
+      <header>
+        <h2>💵 Fee structure</h2>
+      </header>
+      <table>
+        <thead>
+          <tr>
+            <th>Saturation %</th>
+            <th>Fee %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="fee-0">
+            <td>0%</td>
+            <td>0%</td>
+          </tr>
+          <tr id="fee-20">
+            <td>20%</td>
+            <td>0.5%</td>
+          </tr>
+          <tr id="fee-50">
+            <td>50%</td>
+            <td>1.2%</td>
+          </tr>
+          <tr id="fee-70">
+            <td>70%</td>
+            <td>2%</td>
+          </tr>
+          <tr id="fee-90">
+            <td>90%</td>
+            <td>3%</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        For example, we will charge a 0% fee between 0% saturation and 19.99% saturation.
+        Once the pool gets to 20% saturation the fee will be increased to 0.5% until the pool
+        reaches a saturation point of 50%. Fee's can both increase and decrease.
+        If the pool saturation falls below a threshold the fee will also drop.
+      </p>
     </section>
     <section class="hardware-specs">
       <header>

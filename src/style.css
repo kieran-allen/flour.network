@@ -35,6 +35,15 @@ table > tbody > tr:nth-child(odd) {
 table > tbody > tr > td:first-child {
   width: 174px;
 }
+#fee-structure table > tbody > tr > td {
+  width: 50% !important;
+}
+.current-fee {
+  background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  
+  background: linear-gradient(to right, #8E54E9, #4776E6);
+  font-weight: bold;
+  color: white;
+}
 table > tbody > tr > td,
 table > thead > tr > th {
   padding: 14px;
@@ -47,13 +56,8 @@ td.poolid {
   margin-bottom: 56px;
 }
 .pill {
-  background: #4776E6;  
-  background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  
-  background: linear-gradient(to right, #8E54E9, #4776E6);
-  color: white;
+  color: black;
   display: inline-block;
-  padding: 7px 14px;
-  border-radius: 7px;
 }
 @media only screen and (max-width: 600px) {
   table > tbody > tr > td:first-child {
