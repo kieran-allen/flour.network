@@ -8,10 +8,10 @@ const DATA_PROMISE = (async function () {
   );
   if (res.ok) {
     const json = await res.json();
-    console.info(json);
     sessionStorage.setItem(SESSION_STORE_KEY, JSON.stringify(json.data));
     return json.data;
   }
+  return null;
 })();
 function lovelaceToAda(lovelaceValue) {
   return lovelaceValue / 1000000;
